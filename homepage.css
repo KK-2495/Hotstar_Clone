@@ -59,7 +59,7 @@
     flex-direction: column;
     justify-content: space-around;
 }
-.iconList{
+.iconList div{
     display: flex;
 }
 .iconList p{
@@ -68,14 +68,13 @@
     font-weight: 500;
     font-size: 19px;
 }
-/* .iconList:hover p {
+.iconList div:hover p {
     display: block;
-} */
+}
 .iconList svg:hover {
     scale: 1.4;
     filter: drop-shadow(0px 0px 2px #ffff);
     transition: 0.3s;
-    /* display: block; */
 }
 /* ************content****************** */
 
@@ -104,7 +103,6 @@
 .subscribe>div:nth-child(1)>img {
     width: 100%;
 }
-
 
 .clickSubscribe{
     width: 70%;
@@ -139,17 +137,26 @@
     font-weight: 400;
     margin-top: 1%;
 }
-
-
-
-
-
-
+.subsButton button{
+    padding: 10px;
+    width: 120px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(101, 98, 98);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 .banner{
-    height: 300px;
+    /* height: 500px; */
+    width: 100%;
     border: 2px solid white;
+    /* background: url(https://cdn.wallpapersafari.com/71/24/ie2SYB.jpg); */
+    background-repeat: no-repeat;
+    /* background-size: auto; */
 }
+
 .sections{
     width: 92%;
     margin-left: auto;
