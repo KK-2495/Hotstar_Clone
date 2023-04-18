@@ -17,16 +17,18 @@
 .navBar{
     /* border: 2px solid green; */
     width: 25%;
-    height: 569px;
+    height: 100%;
     position: fixed;
     left: 0;
     z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: transparent;
     /* background: linear-gradient(to right, rgb(0, 0, 0), 80%,  rgba(255, 0, 0, 0) ); */
 }
 .navBar:hover{
+    backdrop-filter: blur(2px);
     background: linear-gradient(to right, rgb(0, 0, 0), 80%,  rgba(255, 0, 0, 0) );
 }
 .hotstarLogo {
@@ -71,7 +73,7 @@
 
 .iconList div:hover p {
     display: block;
-    scale: 1.2;
+    /* scale: 1.2; */
 }
 .iconList svg:hover {
     scale: 1.4;
@@ -153,33 +155,34 @@
 .banner{
     height: 600px;
     width: 100%;
-    background: url(https://images.alphacoders.com/270/270963.jpg);
+    background: url(https://english.mathrubhumi.com/image/contentid/policy:1.7641860:1656339815/Kaduva%20Poster.jpg?$p=28d2d55&f=16x9&w=1080&q=0.8);
     /* border: 2px solid white; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    /* background-position: center; */
     margin-top: 2%;
     display: flex;
     justify-content: space-around;
 }
 .banner>div{
     /* border: 2px solid red; */
-    margin-top: 30%;
+    margin-top: 20%;
     width: 35%;
     font-weight: 500;
 }
-.bannerDetails>div:nth-child(odd){
+.bannerDetails>div:nth-child(2){
     display: flex;
     text-align: center;
-}
-.bannerDetails>div:nth-child(2){
     margin-top: 5%;
 }
-.bannerDetails>div:nth-child(1) svg {
+.bannerDetails>div:nth-child(3){
+    margin-top: 5%;
+}
+.bannerDetails>div:nth-child(2) svg {
     scale: 1.1;
 }
-.bannerDetails>div:nth-child(1) button {
+.bannerDetails>div:nth-child(2) button {
     background-color: rgba(10, 0, 0, 0.5);
     padding: 5px;
     border: none;
@@ -189,6 +192,7 @@
 }
 .watchNow{
     margin-top: 10%;
+    display: flex;
     justify-content: space-between;
 }
 .watchNow button:nth-child(1){
@@ -255,7 +259,6 @@
 }
 /* *********************Movies section*********************** */
 
-
 .sections{
     width: 92%;
     /* height: 300px; */
@@ -271,8 +274,6 @@
 .movieList{
     margin-top: 1%;
     width: 98%;
-    height: 83%;
-    /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
 }
@@ -302,7 +303,7 @@
     /* height: 220px; */
     /* border: 1px solid yellow; */
     margin-left: auto;
-    margin-top: 10%;
+    margin-top: 20%;
     display: flex;
 }
 
@@ -366,4 +367,36 @@
 
 .downloadApp2 img{
     width: 100%;
+}
+
+/* ***********Media Query**************** */
+@media screen and (max-width: 770px) {
+    .navBar, .subscribe{
+        display: none;
+    }
+    .banner>div{
+        width: 50%;
+        margin-top: 35%;
+        padding-left: 5%;
+    }
+    .sections{
+        width: 100%;
+        margin: auto;
+    }
+    .movieList{
+        flex-wrap: wrap;
+    }
+    .movieListImage{
+        width: 30%;
+    }
+    .movieListImage:hover{
+        scale: 1.1;
+    }
+    /* .movieListImage:hover{
+        scale: 0.9;
+        transition: 0.3s;
+    } */
+
+
+
 }
