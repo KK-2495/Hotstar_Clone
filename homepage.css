@@ -8,7 +8,7 @@
 }
 .screen{
     width: 100%;
-    height: 569px;
+    /* height: 2000px; */
     /* border: 2px solid gray; */
     background-color: black;
     display: flex;
@@ -16,7 +16,7 @@
 }
 .navBar{
     /* border: 2px solid green; */
-    width: 35%;
+    width: 25%;
     height: 569px;
     position: fixed;
     left: 0;
@@ -68,8 +68,10 @@
     font-weight: 500;
     font-size: 19px;
 }
+
 .iconList div:hover p {
     display: block;
+    scale: 1.2;
 }
 .iconList svg:hover {
     scale: 1.4;
@@ -80,15 +82,15 @@
 
 .content {
     width: 100%;
-    height: 2000px;
-    border: 2px solid red;
+    /* height: 2000px; */
+    /* border: 2px solid red; */
     margin-top: 1%;
 }
 .subscribe{
     width: 92%;
     margin-left: auto;
     /* height: 300px; */
-    border: 2px solid rgb(146, 238, 16);
+    /* border: 2px solid rgb(146, 238, 16); */
     display: flex;
 }
 .subscribe>div {
@@ -149,17 +151,219 @@
 }
 
 .banner{
-    /* height: 500px; */
+    height: 600px;
     width: 100%;
-    border: 2px solid white;
-    /* background: url(https://cdn.wallpapersafari.com/71/24/ie2SYB.jpg); */
+    background: url(https://images.alphacoders.com/270/270963.jpg);
+    /* border: 2px solid white; */
     background-repeat: no-repeat;
-    /* background-size: auto; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
 }
+.banner>div{
+    /* border: 2px solid red; */
+    margin-top: 30%;
+    width: 35%;
+    font-weight: 500;
+}
+.bannerDetails>div:nth-child(odd){
+    display: flex;
+    text-align: center;
+}
+.bannerDetails>div:nth-child(2){
+    margin-top: 5%;
+}
+.bannerDetails>div:nth-child(1) svg {
+    scale: 1.1;
+}
+.bannerDetails>div:nth-child(1) button {
+    background-color: rgba(10, 0, 0, 0.5);
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.watchNow{
+    margin-top: 10%;
+    justify-content: space-between;
+}
+.watchNow button:nth-child(1){
+    width: 75%;
+    padding: 50px;
+    background-color: rgba(10, 0, 0, 0.3);
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 10px;
+}
+.watchNow button:nth-child(1) svg {
+    scale: 1.1;
+    text-align: center;
+    margin: auto;
+    margin-right: 10px;
+}
+.watchNow button:nth-child(2){
+    width: 15%;
+    background-color: rgba(10, 0, 0, 0.3);
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.watchNow button:hover{
+    background-color: rgba(10, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.bannerSlides{
+    display: flex;
+    justify-content: right;
+}
+.sliderImage{
+    width: 80%;
+    height: 40px;
+    /* border: 1px solid yellow; */
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 5%;
+    /* align-self: center; */
+    display: flex;
+    /* padding-top: 9%; */
+    /* overflow: hidden; */
+}
+
+.slideImages{
+    width: 20%;
+    /* border: 1px solid yellow; */
+    margin: auto;
+}
+.slideImages img{
+    width: 100%;
+    border-radius: 5px;
+}
+.slideImages:hover{
+    scale: 1.4;
+    transition: 0.3s;
+}
+/* *********************Movies section*********************** */
+
 
 .sections{
     width: 92%;
+    /* height: 300px; */
+    /* border: 1px solid white; */
     margin-left: auto;
-    height: 300px;
-    border: 2px solid rgb(146, 238, 16);
+    margin-top: 3%;
+}
+
+.sectionTitle{
+    font-size: 18px;
+}
+
+.movieList{
+    margin-top: 1%;
+    width: 98%;
+    height: 83%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.movieListImage{
+    width: 15%;
+    /* height: 95%; */
+    /* border: 1px solid yellow; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movieListImage:hover{
+    scale: 1.2;
+    transition: 0.3s;
+}
+
+
+.movieListImage img{
+    width: 100%;
+    scale: 1.4;
+}
+
+/* ***************Footer*************** */
+.footer{
+    width: 92%;
+    /* height: 220px; */
+    /* border: 1px solid yellow; */
+    margin-left: auto;
+    margin-top: 10%;
+    display: flex;
+}
+
+.footer>div{
+    width: 25%;
+}
+
+.aboutUs h4{
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.contactUs{
+    padding-top: 10px;
+    padding-left: 5px;
+    color: rgb(112,122,148);
+}
+
+.contactUs p{
+    padding-top: 10px;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.copyright{
+    width: 100%;
+    height: 100px;
+    margin-top: 6%;
+    padding-top: 40px;
+    padding-left: 5px;
+}
+
+.copyright p{
+    font-size: 14px;
+    opacity: 0.5;
+    padding-bottom: 10px;
+}
+.downloadApp{
+    width: 90%;
+    /* border: 1px solid white; */
+    margin-top: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.downloadApp1{
+    width: 49%;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+
+.downloadApp1 img{
+    width: 100%;
+}
+
+.downloadApp2{
+    width: 49%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+.downloadApp2 img{
+    width: 100%;
 }
