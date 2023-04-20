@@ -14,10 +14,9 @@ function register(event) {
       if(password == confirmPassword){
         var userInfo = {hStarUser: name, hStarEmail: email, hStarPass: password, hStarConfirmPass: confirmPassword};
         // console.log(userInfo);
-        localStorage.setItem("hotStarUsers", JSON.stringify(userInfo));
 
         var multiUsers = JSON.parse(localStorage.getItem("hotStarUsers")) || [];
-        flagForEmail = false;
+        var flagForEmail = false;
         
         for(var i = 0; i<multiUsers.length; i++){
           if(multiUsers[i].userEmail == email){
@@ -27,13 +26,10 @@ function register(event) {
         if(!flagForEmail){
           multiUsers.push(userInfo);
           localStorage.setItem("hotStarUsers", JSON.stringify(multiUsers));
-          alert("Registered Successful.")
+          alert("Registered Successful.");
         }else{
           alert("You're Already Registered with this Email")
         }
-
-
-        // multiUsers.push(userInfo);
       }else{
         alert("Passwords doesn't Match.")
       }
@@ -43,10 +39,6 @@ function register(event) {
   }else{
     alert("All fields are mandatory.");
   }
-
-
-
-
 
 }
 
