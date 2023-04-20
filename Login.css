@@ -72,11 +72,10 @@
   transition: 0.2s;
 }
 
-  /* .input:focus,
-  input:valid {
+  .input:focus {
     outline: none;
     border: 2px solid white;
-  } */
+  }
 
 .input:focus ~ label,
 input:valid ~ label {
@@ -93,7 +92,7 @@ input:valid ~ label {
     display: flex;
     justify-content: center;
 }
-.loginButton button {
+.loginButton input {
     width: 100%;
   background-color: #a3c3e7;
   color: black;
@@ -104,7 +103,7 @@ input:valid ~ label {
   font-weight: bold;
   font-size: 19px;
 }
-.loginButton button:hover{
+.loginButton input:hover{
     box-shadow: 0 0 10px 10px rgb(73, 73, 73);
     scale: 1.1;
     border: 2px solid #8f8fd4;

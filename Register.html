@@ -15,29 +15,36 @@
             </div>
             <div class="loginForm">
                 <div class="loginInfo">
-                    <h2>Register a New Account</h2>
-                    <div class="userInfo">
-                        <input required="" type="text" name="UserName" p class="input">
-                        <label class="userLabel">User Name</label>
-                    </div>
-                    <div class="userInfo">
-                        <input required="" type="text" name="email" autocomplete="off" class="input">
-                        <label class="userLabel">Email</label>
-                    </div>
-                    <div class="userInfo">
-                        <input required="" type="password" name="password" autocomplete="off" class="input">
-                        <label class="userLabel">Password</label>
-                    </div>
-                    <div class="userInfo">
-                        <input required="" type="password" name="confirmPassword" autocomplete="off" class="input">
-                        <label class="userLabel">Confirm your Password</label>
-                    </div>
-                    <div class="loginButton">
-                       <a href="./Login.html"><button>Register</button></a> 
-                    </div>
+                    <form onsubmit="register(event)" action="">
+                        <h2>Register a New Account</h2>
+                        <div class="userInfo">
+                            <input id="userName" type="text" name="UserName" p class="input">
+                            <label class="userLabel">User Name</label>
+                        </div>
+                        <div class="userInfo">
+                            <input id="userEmail" type="email" name="email" autocomplete="off" class="input">
+                            <label class="userLabel">Email</label>
+                        </div>
+                        <div class="userInfo">
+                            <input id="userPassword" type="password" name="password" autocomplete="off" class="input">
+                            <label class="userLabel">Password</label>
+                        </div>
+                        <div class="userInfo">
+                            <input id="userConfirmPassword" type="password" name="confirmPassword" autocomplete="off" class="input">
+                            <label class="userLabel">Confirm your Password</label>
+                        </div>
+                        <div class="loginButton">
+                           <!-- <a href="./Login.html"><button>Register</button></a>  -->
+                            <!-- <a href="./Login.html">
+                                <input type="submit" value="Register">
+                            </a> -->
+                            <input type="submit" value="Register">
+                        </div>    
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./userData.js"></script>
 </body>
 </html>
