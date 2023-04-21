@@ -17,19 +17,19 @@
                 </div>
                 <div class="loginForm">
                     <div class="loginInfo">
-                        <form action="">
+                        <form login(event) action="">
                             <h2>Login to Continue</h2>
                             <div class="userInfo">
-                                <input required="" type="text" name="text" autocomplete="off" class="input">
+                                <input id="uName" type="text" name="text" autocomplete="off" class="input">
                                 <label class="userLabel">Email</label>
                             </div>
                             <div class="userInfo">
-                                <input required="" type="password" name="password" autocomplete="off" class="input">
+                                <input  type="password" name="password" autocomplete="off" class="input">
                                 <label class="userLabel">Password</label>
                             </div>
                             <div class="loginButton">
                                 <!-- <button onsubmit="login(event)">Log In</button> -->
-                                <a href="./HomePage.html"> <input type="submit" value="Log In"></a>
+                                <input type="submit" value="Log In">
                             </div>
                         </form>
                     </div>

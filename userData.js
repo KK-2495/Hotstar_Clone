@@ -14,6 +14,7 @@ function register(event) {
       if(password == confirmPassword){
         // console.log(userInfo);
         
+        var userInfo = {hStarUser: name, hStarEmail: email, hStarPass: password, hStarConfirmPass: confirmPassword};
         var multiUsers = JSON.parse(localStorage.getItem("hotStarUsers")) || [];
         var flagForEmail = false;
         
@@ -23,7 +24,6 @@ function register(event) {
           }
         }
         if(!flagForEmail){
-          var userInfo = {hStarUser: name, hStarEmail: email, hStarPass: password, hStarConfirmPass: confirmPassword};
           multiUsers.push(userInfo);
           localStorage.setItem("hotStarUsers", JSON.stringify(multiUsers));
           alert("Registered Successful.");
@@ -42,7 +42,12 @@ function register(event) {
 
 }
 
+// ************Login Function***********//
 
-
+function login(event) {
+  event.preventDefault();
+  
+  
+}
 
 
