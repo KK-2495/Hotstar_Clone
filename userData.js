@@ -27,6 +27,7 @@ function register(event) {
           multiUsers.push(userInfo);
           localStorage.setItem("hotStarUsers", JSON.stringify(multiUsers));
           alert("Registered Successful.");
+          window.location.href = `./Login.html`;
         }else{
           alert("You're Already Registered with this Email")
         }
@@ -46,7 +47,33 @@ function register(event) {
 
 function login(event) {
   event.preventDefault();
+
+  var email = document.getElementById("userEmail").value;
+  // console.log(name);
+  var password = document.getElementById("userPassword").value;
+
   
+  var hStarLogin = JSON.parse(localStorage.getItem("hotStarUsers"));
+  // console.log(hStarLogin);
+  
+  var flagForEmail = false;
+  var currentUser;
+  for(var i=0; i<hStarLogin.length; i++){
+    // console.log(hStarLogin[i].hStarEmail);
+    if(hStarLogin[i].hStarEmail == email && hStarLogin[i].hStarPass == password){
+      // console.log(hStarLogin[i]);
+      flagForEmail = true;
+      currentUser = hStarLogin[i];
+    }
+  }if(flagForEmail == true){  
+    // console.log(currentUser);
+    localStorage.setItem("hStarActiveUser", JSON.stringify(currentUser));
+    alert("Logged IN ")
+    window.location.href = `./HomePage.html`;
+  }else{
+    alert("Please Register to Login..")
+  }
+
   
 }
 
