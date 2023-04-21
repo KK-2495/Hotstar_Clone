@@ -12,18 +12,18 @@ function register(event) {
   if(name && email && password && confirmPassword){
     if(password.length >= 8 && confirmPassword.length >= 8){
       if(password == confirmPassword){
-        var userInfo = {hStarUser: name, hStarEmail: email, hStarPass: password, hStarConfirmPass: confirmPassword};
         // console.log(userInfo);
-
+        
         var multiUsers = JSON.parse(localStorage.getItem("hotStarUsers")) || [];
         var flagForEmail = false;
         
         for(var i = 0; i<multiUsers.length; i++){
-          if(multiUsers[i].userEmail == email){
+          if(multiUsers[i].hStarEmail == email){
             flagForEmail = true;
           }
         }
         if(!flagForEmail){
+          var userInfo = {hStarUser: name, hStarEmail: email, hStarPass: password, hStarConfirmPass: confirmPassword};
           multiUsers.push(userInfo);
           localStorage.setItem("hotStarUsers", JSON.stringify(multiUsers));
           alert("Registered Successful.");
@@ -46,26 +46,3 @@ function register(event) {
 
 
 
-// *********Login Function*******//
-
-// function login(event) {
-//     event.preventDefault();
-//     var email = document.getElementById("userEmail").value;
-//     var password = document.getElementById("userPassword").value;
-//     // alert(email,password);
-//     var LSlogin = JSON.parse(localStorage.getItem("Users"));
-//     console.log(LSlogin);
-//     var flagForUser = false;
-//     for(var i=0; i<LSlogin.length; i++){
-//       // console.log(LSlogin[i].userEmail);
-//       if(LSlogin[i].userEmail == email && LSlogin[i].userPassword == password){
-//         flagForUser = true;
-//       }
-//     }
-//     if(flagForUser == true){
-//       alert("Registration Successful.")
-//     }else{
-//       alert("Credential does not match")
-//     }
-  
-//   }
