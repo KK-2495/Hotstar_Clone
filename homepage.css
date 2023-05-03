@@ -150,7 +150,12 @@
     border-radius: 10px;
     cursor: pointer;
 }
-
+#logout button{
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: black;
+    outline: none;
+}
 .banner{
     height: 600px;
     width: 100%;

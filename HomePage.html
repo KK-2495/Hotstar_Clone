@@ -1,325 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Hotstar</title>
-    <script src="https://kit.fontawesome.com/3f7f3f9444.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./homepage.css">
-    
-</head>
-<body>
-    <div class="screen">
-        <!-- ************Left Nav Bar*********** -->
-        <div class="navBar">
-            <div class="hotstarLogo">
-                <img src="https://img.hotstar.com/image/upload/v1656431456/web-images/logo-d-plus.svg" alt="">
-                <p>Subscribe <i class="fa-solid fa-chevron-right"></i></p>
-            </div>
 
-            <div class="icons">
-                <div class="iconList">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26ZM71.44,198a66,66,0,0,1,113.12,0,89.8,89.8,0,0,1-113.12,0ZM94,120a34,34,0,1,1,34,34A34,34,0,0,1,94,120Zm99.51,69.64a77.53,77.53,0,0,0-40-31.38,46,46,0,1,0-51,0,77.53,77.53,0,0,0-40,31.38,90,90,0,1,1,131,0Z"></path></svg>
-                        <p id="switchUser" onclick="window.location.href = `./Login.html`">My Space</p>
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Hotstar</title>
+        <script src="https://kit.fontawesome.com/3f7f3f9444.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./homepage.css">
+
+    </head>
+
+    <body>
+        <div class="screen">
+            <!-- ************Left Nav Bar*********** -->
+            <div class="navBar">
+                <div class="hotstarLogo">
+                    <img src="https://img.hotstar.com/image/upload/v1656431456/web-images/logo-d-plus.svg" alt="">
+                    <p>Subscribe <i class="fa-solid fa-chevron-right"></i></p>
                 </div>
-                <div class="iconList">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z"></path></svg>
-                        <p>Search</p>
-                    </div>
-                </div>
-                <div class="iconList">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M216,66H142.48l37.76-37.76a6,6,0,0,0-8.48-8.48L128,63.51,84.24,19.76a6,6,0,1,0-8.48,8.48L113.52,66H40A14,14,0,0,0,26,80V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V80A14,14,0,0,0,216,66Zm2,134a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V80a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2Z"></path></svg>
-                        <p>Home</p>
-                    </div>
-                </div>
-                <div class="iconList">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M216,66H142.48l37.76-37.76a6,6,0,0,0-8.48-8.48L128,63.51,84.24,19.76a6,6,0,1,0-8.48,8.48L113.52,66H40A14,14,0,0,0,26,80V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V80A14,14,0,0,0,216,66ZM38,200V80a2,2,0,0,1,2-2H146V202H40A2,2,0,0,1,38,200Zm180,0a2,2,0,0,1-2,2H158V78h58a2,2,0,0,1,2,2Zm-20-84a10,10,0,1,1-10-10A10,10,0,0,1,198,116Zm0,48a10,10,0,1,1-10-10A10,10,0,0,1,198,164Z"></path></svg>
-                        <p>TV</p>
-                    </div>
-                </div>
-                <div class="iconList">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M216,42H40A14,14,0,0,0,26,56V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A14,14,0,0,0,216,42ZM38,86h84v84H38Zm96-12V54h36V74Zm-12,0H86V54h36Zm0,108v20H86V182Zm12,0h36v20H134Zm0-12V86h84v84ZM218,56V74H182V54h34A2,2,0,0,1,218,56ZM40,54H74V74H38V56A2,2,0,0,1,40,54ZM38,200V182H74v20H40A2,2,0,0,1,38,200Zm178,2H182V182h36v18A2,2,0,0,1,216,202Z"></path></svg>
-                        <p>Movies</p>
-                    </div>
-                </div>
-                <div class="iconList">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M200.16,55.88a102,102,0,1,0,0,144.24A101.4,101.4,0,0,0,200.16,55.88ZM64.33,64.36a89.62,89.62,0,0,1,57.25-26.07A89.32,89.32,0,0,1,95.46,95.47a89.38,89.38,0,0,1-57.21,26.11A89.61,89.61,0,0,1,64.33,64.36ZM38.2,133.63A101.36,101.36,0,0,0,104,104a101.24,101.24,0,0,0,29.68-65.72,89.76,89.76,0,0,1,84.17,84.13,102,102,0,0,0-95.43,95.39A89.76,89.76,0,0,1,38.2,133.63Zm153.47,58a89.63,89.63,0,0,1-57.25,26.06,89.94,89.94,0,0,1,83.33-83.28A89.61,89.61,0,0,1,191.67,191.64Z"></path></svg>
-                        <p>Sports</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ***********Content************* -->
-        <div class="content">
-            <div class="subscribe">
-                <div>
-                    <img src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-04-15/3RTSv4_deskXbb-8fed3973-129b-416c-9338-0b71af9a614e.jpg" alt="subscribe image" />
-                </div>
-                <div>
-                    <div class="clickSubscribe">
+
+                <div class="icons">
+                    <div class="iconList">
                         <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26ZM71.44,198a66,66,0,0,1,113.12,0,89.8,89.8,0,0,1-113.12,0ZM94,120a34,34,0,1,1,34,34A34,34,0,0,1,94,120Zm99.51,69.64a77.53,77.53,0,0,0-40-31.38,46,46,0,1,0-51,0,77.53,77.53,0,0,0-40,31.38,90,90,0,1,1,131,0Z">
+                                </path>
+                            </svg>
+                            <p id="switchUser">My Space</p>
+                        </div>
+                    </div>
+                    <div class="iconList">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z">
+                                </path>
+                            </svg>
+                            <p>Search</p>
+                        </div>
+                    </div>
+                    <div class="iconList">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M216,66H142.48l37.76-37.76a6,6,0,0,0-8.48-8.48L128,63.51,84.24,19.76a6,6,0,1,0-8.48,8.48L113.52,66H40A14,14,0,0,0,26,80V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V80A14,14,0,0,0,216,66Zm2,134a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V80a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2Z">
+                                </path>
+                            </svg>
+                            <p>Home</p>
+                        </div>
+                    </div>
+                    <div class="iconList">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M216,66H142.48l37.76-37.76a6,6,0,0,0-8.48-8.48L128,63.51,84.24,19.76a6,6,0,1,0-8.48,8.48L113.52,66H40A14,14,0,0,0,26,80V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V80A14,14,0,0,0,216,66ZM38,200V80a2,2,0,0,1,2-2H146V202H40A2,2,0,0,1,38,200Zm180,0a2,2,0,0,1-2,2H158V78h58a2,2,0,0,1,2,2Zm-20-84a10,10,0,1,1-10-10A10,10,0,0,1,198,116Zm0,48a10,10,0,1,1-10-10A10,10,0,0,1,198,164Z">
+                                </path>
+                            </svg>
+                            <p>TV</p>
+                        </div>
+                    </div>
+                    <div class="iconList">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M216,42H40A14,14,0,0,0,26,56V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A14,14,0,0,0,216,42ZM38,86h84v84H38Zm96-12V54h36V74Zm-12,0H86V54h36Zm0,108v20H86V182Zm12,0h36v20H134Zm0-12V86h84v84ZM218,56V74H182V54h34A2,2,0,0,1,218,56ZM40,54H74V74H38V56A2,2,0,0,1,40,54ZM38,200V182H74v20H40A2,2,0,0,1,38,200Zm178,2H182V182h36v18A2,2,0,0,1,216,202Z">
+                                </path>
+                            </svg>
+                            <p>Movies</p>
+                        </div>
+                    </div>
+                    <div class="iconList">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M200.16,55.88a102,102,0,1,0,0,144.24A101.4,101.4,0,0,0,200.16,55.88ZM64.33,64.36a89.62,89.62,0,0,1,57.25-26.07A89.32,89.32,0,0,1,95.46,95.47a89.38,89.38,0,0,1-57.21,26.11A89.61,89.61,0,0,1,64.33,64.36ZM38.2,133.63A101.36,101.36,0,0,0,104,104a101.24,101.24,0,0,0,29.68-65.72,89.76,89.76,0,0,1,84.17,84.13,102,102,0,0,0-95.43,95.39A89.76,89.76,0,0,1,38.2,133.63Zm153.47,58a89.63,89.63,0,0,1-57.25,26.06,89.94,89.94,0,0,1,83.33-83.28A89.61,89.61,0,0,1,191.67,191.64Z">
+                                </path>
+                            </svg>
+                            <p>Sports</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ***********Content************* -->
+            <div class="content">
+                <div class="subscribe">
+                    <div>
+                        <img src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-04-15/3RTSv4_deskXbb-8fed3973-129b-416c-9338-0b71af9a614e.jpg"
+                            alt="subscribe image" />
+                    </div>
+                    <div>
+                        <div class="clickSubscribe">
                             <div>
-                                <img src="https://brand-img1.hotstarext.com/image/upload/v1585728139/Disnet%20Plus%20Hotstar%20Logo/D_Hotstar_logo_Dark_BG_120x120.png" alt="">
+                                <div>
+                                    <img src="https://brand-img1.hotstarext.com/image/upload/v1585728139/Disnet%20Plus%20Hotstar%20Logo/D_Hotstar_logo_Dark_BG_120x120.png"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <h5>Disney+ Hotstar</h5>
+                                    <p>Endless Entertainment</p>
+                                </div>
                             </div>
-                            <div>
-                                <h5>Disney+ Hotstar</h5>
-                                <p>Endless Entertainment</p>
+                            <p>Don't Wait For This Endless Entertainment, Just A Click Away!</p>
+                        </div>
+                        <div class="subsButton">
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                    <div id="logout">
+                        <button onclick="window.location.href = `./Login.html`">Log In</button>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="bannerDetails">
+                        <div>
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,h_136/sources/r1/cms/prod/6758/1476758-t-ad8fbf5661e5"
+                                alt="">
+                        </div>
+                        <div>
+                            <p>2022</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path d="M176,128a48,48,0,1,1-48-48A48,48,0,0,1,176,128Z" opacity="0.2" />
+                                <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z" />
+                            </svg>
+                            <p>2h 29min</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path d="M176,128a48,48,0,1,1-48-48A48,48,0,0,1,176,128Z" opacity="0.2" />
+                                <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z" />
+                            </svg>
+                            <p>4 languages</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path d="M176,128a48,48,0,1,1-48-48A48,48,0,0,1,176,128Z" opacity="0.2" />
+                                <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z" />
+                            </svg>
+                            <button>U/A 13+</button>
+                        </div>
+                        <div>
+                            Drama | Action
+                        </div>
+                        <div class="watchNow">
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M228.23,134.69,84.15,222.81A8,8,0,0,1,72,216.12V39.88a8,8,0,0,1,12.15-6.69l144.08,88.12A7.82,7.82,0,0,1,228.23,134.69Z"
+                                        opacity="0.2"></path>
+                                    <path
+                                        d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z">
+                                    </path>
+                                </svg>Watch Now</button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <div class="bannerSlides">
+                        <div class="sliderImage">
+                            <div class="slideImages">
+                                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/6700/1026700-h-baab56827741"
+                                    alt="" />
+                            </div>
+                            <div class="slideImages">
+                                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/355/1500355-h-48caf56cb94e"
+                                    alt="" />
+                            </div>
+                            <div class="slideImages">
+                                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/7456/267456-h"
+                                    alt="" />
+                            </div>
+
+                            <div class="slideImages">
+                                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/3227/1423227-h-1e07ce45fc2e"
+                                    alt="" />
                             </div>
                         </div>
-                        <p>Don't Wait For This Endless Entertainment, Just A Click Away!</p>
-                    </div>
-                    <div class="subsButton">
-                        <button>Subscribe</button>
                     </div>
                 </div>
-            </div>
-            <div class="banner">
-                <div class="bannerDetails">
+                <div class="sections">
+                    <div class="sectionTitle">
+                        <h3>Latest & Trending</h3>
+                    </div>
+                    <div class="movieList">
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/361/1500361-v-b4b09b222ec6"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4967/1494967-v-2b16e4e00bb1"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9415/1489415-v-dd3f07efdbc3"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1926/1481926-v-87f998eca02e"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1740/1481740-v-a55b1b24dabf"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9273/1479273-v-c3a3c07fe35c"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <div class="sectionTitle">
+                        <h3>Popular Shows</h3>
+                    </div>
+                    <div class="movieList">
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4249/1364249-v-2e30b93b7bb5"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4267/1364267-v-59ed5cfdea3a"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4253/1364253-v-17a2ff74143c"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3569/1443569-v-9dd281391af9"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9156/1459156-v-f0033f29e0ed"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4255/1364255-v-7d13c9d136b5"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <div class="sectionTitle">
+                        <h3>Movies Recommended For You</h3>
+                    </div>
+                    <div class="movieList">
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/3314/1770003314/1770003314-v"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9231/1389231-v-6191b0d9af4f"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/4189/1000074189/1000074189-v"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9219/1389219-v-9752e6e5bb92"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/6088/1000216088/1000216088-v"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <a href="./singleMovie.html">
+                                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6757/1476757-v-a8b0daa00556"
+                                    alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <div class="sectionTitle">
+                        <h3>Shows Recommended For You</h3>
+                    </div>
+                    <div class="movieList">
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2876/862876-v"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3229/1423229-v-38316a3e497f"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7527/267527-v"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1992/311992-v"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2207/1042207-v-658575358753"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4267/1364267-v-59ed5cfdea3a"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <div class="sectionTitle">
+                        <h3>Popular Movies</h3>
+                    </div>
+                    <div class="movieList">
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9219/1389219-v-9752e6e5bb92"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9747/1479747-v-f079dabffd5e"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3669/593669-v"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9231/1389231-v-6191b0d9af4f"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6757/1476757-v-a8b0daa00556"
+                                alt="" />
+                        </div>
+                        <div class="movieListImage">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7676/647676-v"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ***************Footer**********************            -->
+                <div class="footer">
                     <div>
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,h_136/sources/r1/cms/prod/6758/1476758-t-ad8fbf5661e5" alt="">
+                        <div class="aboutUs">
+                            <h4>Company</h4>
+                        </div>
+                        <div class="contactUs">
+                            <p>About Us</p>
+                            <p>Careers</p>
+                        </div>
+                        <div class="copyright">
+                            <p>© 2023 STAR. All Rights Reserved.</p>
+                            <p>Terms of Use Privacy Policy FAQ</p>
+                        </div>
                     </div>
                     <div>
-                        <p>2022</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M176,128a48,48,0,1,1-48-48A48,48,0,0,1,176,128Z" opacity="0.2"/><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z"/></svg>
-                        <p>2h 29min</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M176,128a48,48,0,1,1-48-48A48,48,0,0,1,176,128Z" opacity="0.2"/><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z"/></svg>
-                        <p>4 languages</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M176,128a48,48,0,1,1-48-48A48,48,0,0,1,176,128Z" opacity="0.2"/><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z"/></svg>
-                        <button>U/A 13+</button>
+                        <div class="aboutUs">
+                            <h4>View Website in</h4>
+                        </div>
+                        <div class="contactUs">
+                            <p>English</p>
+                        </div>
                     </div>
                     <div>
-                        Drama | Action
-                    </div>
-                    <div class="watchNow">
-                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M228.23,134.69,84.15,222.81A8,8,0,0,1,72,216.12V39.88a8,8,0,0,1,12.15-6.69l144.08,88.12A7.82,7.82,0,0,1,228.23,134.69Z" opacity="0.2"></path><path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"></path></svg>Watch Now</button>
-                        <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></button>
-                    </div>
-                </div>
-                <div class="bannerSlides">
-                    <div class="sliderImage">
-                        <div class="slideImages">
-                            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/6700/1026700-h-baab56827741" alt="" />
+                        <div class="aboutUs">
+                            <h4>Need Help?</h4>
                         </div>
-                        <div class="slideImages">
-                            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/355/1500355-h-48caf56cb94e" alt="" />
-                        </div>
-                        <div class="slideImages">
-                            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/7456/267456-h" alt="" />
-                        </div>
-
-                        <div class="slideImages">
-                            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/3227/1423227-h-1e07ce45fc2e" alt="" />
+                        <div class="contactUs">
+                            <p>Visit Help Center</p>
+                            <p>Share Feedback</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="sections">
-                <div class="sectionTitle">
-                    <h3>Latest & Trending</h3>
-                </div>
-                <div class="movieList">
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/361/1500361-v-b4b09b222ec6" alt="" />
+                    <div>
+                        <div class="aboutUs">
+                            <h4>Connect With Us</h4>
+                        </div>
+                        <div class="contactUs">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z" />
+                            </svg>
+                        </div>
+                        <div class="downloadApp">
+                            <div class="downloadApp1">
+                                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_1920/v1661346101/google-playstore"
+                                    alt="" />
+                            </div>
+                            <div class="downloadApp2">
+                                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_1920/v1661346071/ios-appstore"
+                                    alt="" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4967/1494967-v-2b16e4e00bb1" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9415/1489415-v-dd3f07efdbc3" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1926/1481926-v-87f998eca02e" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1740/1481740-v-a55b1b24dabf" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9273/1479273-v-c3a3c07fe35c" alt="" />
-                    </div>
-                </div>
-            </div>
-            
-            <div class="sections">
-                <div class="sectionTitle">
-                    <h3>Popular Shows</h3>
-                </div>
-                <div class="movieList">
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4249/1364249-v-2e30b93b7bb5" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4267/1364267-v-59ed5cfdea3a" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4253/1364253-v-17a2ff74143c" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3569/1443569-v-9dd281391af9" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9156/1459156-v-f0033f29e0ed" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4255/1364255-v-7d13c9d136b5" alt="" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="sections">
-                <div class="sectionTitle">
-                    <h3>Movies Recommended For You</h3>
-                </div>
-                <div class="movieList">
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/3314/1770003314/1770003314-v" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9231/1389231-v-6191b0d9af4f" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/4189/1000074189/1000074189-v" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9219/1389219-v-9752e6e5bb92" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/6088/1000216088/1000216088-v" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <a href="./singleMovie.html">
-                            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6757/1476757-v-a8b0daa00556" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sections">
-                <div class="sectionTitle">
-                    <h3>Shows Recommended For You</h3>
-                </div>
-                <div class="movieList">
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2876/862876-v" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3229/1423229-v-38316a3e497f" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7527/267527-v" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1992/311992-v" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2207/1042207-v-658575358753" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4267/1364267-v-59ed5cfdea3a" alt="" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="sections">
-                <div class="sectionTitle">
-                    <h3>Popular Movies</h3>
-                </div>
-                <div class="movieList">
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9219/1389219-v-9752e6e5bb92" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9747/1479747-v-f079dabffd5e" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3669/593669-v" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9231/1389231-v-6191b0d9af4f" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6757/1476757-v-a8b0daa00556" alt="" />
-                    </div>
-                    <div class="movieListImage">
-                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7676/647676-v" alt="" />
-                    </div>
-                </div>
-            </div>
-
-    <!-- ***************Footer**********************            -->
-    <div class="footer">
-        <div>
-            <div class="aboutUs">
-                <h4>Company</h4>
-            </div>
-            <div class="contactUs">
-                <p>About Us</p>
-                <p>Careers</p>
-            </div>
-            <div class="copyright">
-                <p>© 2023 STAR. All Rights Reserved.</p>
-                <p>Terms of Use    Privacy Policy    FAQ</p>
-            </div>
-        </div>
-        <div>
-            <div class="aboutUs">
-                <h4>View Website in</h4>
-            </div>
-            <div class="contactUs">
-                <p>English</p>
-            </div>
-        </div>
-        <div>
-            <div class="aboutUs">
-                <h4>Need Help?</h4>
-            </div>
-            <div class="contactUs">
-                <p>Visit Help Center</p>
-                <p>Share Feedback</p>
-            </div>
-        </div>
-        <div>
-            <div class="aboutUs">
-                <h4>Connect With Us</h4>
-            </div>
-            <div class="contactUs">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"/></svg>
-            </div>
-            <div class="downloadApp">
-                <div class="downloadApp1">
-                    <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_1920/v1661346101/google-playstore" alt="" />
-                </div>
-                <div class="downloadApp2">
-                    <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_1920/v1661346071/ios-appstore" alt="" />
                 </div>
             </div>
         </div>
-    </div>
-        </div>
-    </div>
-    <script>
-        window.onload = function (){
-            // alert("Welcome to Hotstar");
-            var activeUser = JSON.parse(localStorage.getItem("hStarActiveUser"));
-            // console.log(activeUser.hStarUser);
-            if(activeUser){
-                var convertMyspacetoName = document.getElementById("switchUser");
-                // console.log(convertMyspacetoName);
-                var activeUserName = `<h3>${activeUser.hStarUser}</h3>`;
-                // console.log(activeUserName);
-                convertMyspacetoName.innerHTML = activeUserName;
-            }else{
-                alert("Login to See More..")
+        <script>
+            window.onload = function () {
+                // alert("Welcome to Hotstar");
+                var activeUser = JSON.parse(localStorage.getItem("hStarActiveUser"));
+                // console.log(activeUser.hStarUser);
+                if (activeUser) {
+                    var convertMyspacetoName = document.getElementById("switchUser");
+                    var logoutswitch = document.getElementById("logout");
+                    // console.log(convertMyspacetoName);
+                    var activeUserName = `<h3>${activeUser.hStarUser}</h3>`;
+                    var logout = `<button onclick="logout()">Log Out</button>`;
+                    // console.log(activeUserName);
+                    convertMyspacetoName.innerHTML = activeUserName;
+                    logoutswitch.innerHTML = logout;
+                } else {
+                    alert("You've Logged out.");
+                }
             }
-        }
-    </script>
-</body>
+            function logout() {
+                localStorage.removeItem("hStarActiveUser");
+                window.location.reload();
+            }
+        </script>
+    </body>
+
 </html>
