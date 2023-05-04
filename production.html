@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production </title>
+</head>
+<body>
+    <h2>Add your movies here</h2>
+    <form onsubmit="addMovie(event)">
+        <label>Movie Name</label><br />
+        <input type="text" id="movieName" /><br />
+        <label>Banner Image url</label><br />
+        <input type="text" id="movieImage" /><br />
+        <input type="submit" /><br />
+    </form>
+    <script>
+        function addMovie(event){
+            event.preventDefault();
+            var movieTitle = document.getElementById("movieName").value;
+            var movieBanner = document.getElementById("movieImage").value;
+            
+            var movie = { movieTitle, movieBanner };
+            var addedMovies = JSON.parse(localStorage.getItem("movies")) || [];
+            addedMovies.push(movie);
+
+            localStorage.setItem("movies",JSON.stringify(addedMovies));
+
+            alert("Added Succesfully");
+        }
+    </script>
+</body>
+</html>

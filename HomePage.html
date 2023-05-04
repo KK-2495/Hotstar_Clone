@@ -191,12 +191,12 @@
                     <div class="sectionTitle">
                         <h3>Latest & Trending</h3>
                     </div>
-                    <div class="movieList">
-                        <div class="movieListImage">
+                    <div class="movieList" id="movieList">
+                        <!-- <div class="movieListImage">
                             <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/361/1500361-v-b4b09b222ec6"
                                 alt="" />
-                        </div>
-                        <div class="movieListImage">
+                        </div> -->
+                        <!-- <div class="movieListImage">
                             <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4967/1494967-v-2b16e4e00bb1"
                                 alt="" />
                         </div>
@@ -215,7 +215,7 @@
                         <div class="movieListImage">
                             <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9273/1479273-v-c3a3c07fe35c"
                                 alt="" />
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -428,11 +428,23 @@
                 } else {
                     alert("You've Logged out.");
                 }
+                // ******addedmovies*****
+                var displayMovie = document.getElementById("movieList");
+                var finalData = "";
+
+                var moviesFromProduction = JSON.parse(localStorage.getItem("movies"));
+                for (var i = 0; i < moviesFromProduction.length; i++) {
+                    finalData += `<div class="movieListImage"><img src=${moviesFromProduction[i].movieBanner} /><h3>${moviesFromProduction[i].movieTitle}</h3></div>`;
+                }
+                displayMovie.innerHTML = finalData;
             }
             function logout() {
                 localStorage.removeItem("hStarActiveUser");
                 window.location.reload();
+
             }
+
+
         </script>
     </body>
 
