@@ -88,8 +88,8 @@
         <!-- ***********Content************* -->
         <div class="content">
            
-            <div class="banner">
-                <div class="bannerDetails">
+            <div class="banner" id="bannerImage">
+                <div class="bannerDetails" >
                     <div>
                         <img src="https://img1.hotstarext.com/image/upload/f_auto,h_136/sources/r1/cms/prod/6758/1476758-t-ad8fbf5661e5" alt="">
                     </div>
@@ -109,7 +109,7 @@
                         Drama | Action
                     </div>
                     <div class="watchNow">
-                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M228.23,134.69,84.15,222.81A8,8,0,0,1,72,216.12V39.88a8,8,0,0,1,12.15-6.69l144.08,88.12A7.82,7.82,0,0,1,228.23,134.69Z" opacity="0.2"></path><path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"></path></svg>Watch Now</button>
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><path d="M228.23,134.69,84.15,222.81A8,8,0,0,1,72,216.12V39.88a8,8,0,0,1,12.15-6.69l144.08,88.12A7.82,7.82,0,0,1,228.23,134.69Z" opacity="0.2"></path><path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"></path></svg>Buy Movie</button>
                         <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></button>
                     </div>
                 </div>
@@ -193,5 +193,20 @@
     </div>
         </div>
     </div>
+    <script>
+        window.onload = function(){
+            var movie = JSON.parse(localStorage.getItem("singleMovie"));
+
+            var movieImage = document.getElementById("bannerImage");
+            // var movieName = document.getElementById("");
+            var movieBanner = `<div style="width:60%;display:flex;"><img src="${movie.movieBanner}" style="width:100%;border:1px solid white; "/><h3 >${movie.movieTitle}</h3><button onclick="addCart()" style="color:black; height:50px">Buy Movie</button></div>`;
+            movieImage.innerHTML = movieBanner;
+            // movieName.innerHTML = ;
+            
+        }
+        function addCart(){
+            alert("Adding to Cart");
+        }
+    </script>
 </body>
 </html>

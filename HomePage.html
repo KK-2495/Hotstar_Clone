@@ -434,9 +434,13 @@
 
                 var moviesFromProduction = JSON.parse(localStorage.getItem("movies"));
                 for (var i = 0; i < moviesFromProduction.length; i++) {
-                    finalData += `<div class="movieListImage"><img src=${moviesFromProduction[i].movieBanner} /><h3>${moviesFromProduction[i].movieTitle}</h3></div>`;
+                    finalData += `<div onclick='redirect(${JSON.stringify(moviesFromProduction[i])})'class="movieListImage"><img src=${moviesFromProduction[i].movieBanner} /><h3>${moviesFromProduction[i].movieTitle}</h3></div>`;
                 }
                 displayMovie.innerHTML = finalData;
+            }
+            function redirect(movie){
+                localStorage.setItem("singleMovie",JSON.stringify(movie));
+                window.location.href = `./singleMovie.html`;
             }
             function logout() {
                 localStorage.removeItem("hStarActiveUser");

@@ -6,7 +6,7 @@
 .cartScreen{
     width: 100%;
     /* height: 2000px; */
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     background-color: black;
 }
 .topNavBar{
@@ -147,6 +147,7 @@
 }
 .paymentMethod>div>i:hover{
     scale: 1.3;
+    transition: 0.3s;
 }
 
 
