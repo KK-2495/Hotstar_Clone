@@ -13,6 +13,8 @@
         <input type="text" id="movieName" /><br />
         <label>Banner Image url</label><br />
         <input type="text" id="movieImage" /><br />
+        <label>Movie Cost</label><br />
+        <input type="text" id="movieCost" /><br />
         <input type="submit" /><br />
     </form>
     <script>
@@ -20,8 +22,9 @@
             event.preventDefault();
             var movieTitle = document.getElementById("movieName").value;
             var movieBanner = document.getElementById("movieImage").value;
+            var movieCost = document.getElementById("movieCost").value;
             
-            var movie = { movieTitle, movieBanner };
+            var movie = { movieTitle, movieBanner, movieCost };
             var addedMovies = JSON.parse(localStorage.getItem("movies")) || [];
             addedMovies.push(movie);
 

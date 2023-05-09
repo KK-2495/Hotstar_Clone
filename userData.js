@@ -6,6 +6,7 @@ function register(event) {
   var email = document.getElementById("userEmail").value;
   var password = document.getElementById("userPassword").value;
   var confirmPassword = document.getElementById("userConfirmPassword").value;
+  var hStarMovie = [];
 
   if (name && email && password && confirmPassword) {
     if (password.length >= 8 && confirmPassword.length >= 8) {
@@ -25,7 +26,7 @@ function register(event) {
             hStarUser: name,
             hStarEmail: email,
             hStarPass: password,
-            hStarConfirmPass: confirmPassword,
+            hStarConfirmPass: confirmPassword,hStarMovie,
           };
           multiUsers.push(userInfo);
           localStorage.setItem("hotStarUsers", JSON.stringify(multiUsers));

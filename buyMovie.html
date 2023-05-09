@@ -92,7 +92,7 @@
             </div>
             <!-- *****************Buy video********************    -->
             <div class="watchFullMovie">
-                <div class="fullMovie">
+                <div id="movieList" class="fullMovie">
                     <div class="movieTrailer">
                         <iframe src="https://www.youtube.com/embed/MFBUzw5tCQc"
                             title="Kaduva Tamil Movie Official Teaser | Prithviraj Sukumaran | Shaji Kailas | Jinu V Abhraham"
@@ -107,7 +107,7 @@
                 <div class="buyMovie">
                     <div class="movieCost">
                         <h3>Watch on Disney+ HotStar</h3>
-                        <div class="movieDetail">
+                        <div id="movieDetail" class="movieDetail">
                             <div class="moviePoster">
                                 <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kaduva-tamil-et00332530-1677151823.jpg"
                                     alt="">
@@ -220,6 +220,29 @@
                 </div>
             </div>
         </div>
+        <script>
+            window.onload = function(){
+                var hStarUserList = JSON.parse(localStorage.getItem("hotStarUsers"));
+                var hotStarCurrentUser = JSON.parse(localStorage.getItem("hStarActiveUser"));
+                var hstarMovieList = document.getElementById("movieList");
+                var buyMovie ;
+
+                for (var i = 0; i < hStarUserList.length; i++) {
+                    if (hotStarCurrentUser.hStarEmail == hStarUserList[i].hStarEmail){
+                        buyMovie = hStarUserList[i].hStarMovie;
+                    }
+                }
+                var movieList = "";
+                for(var i=0; i<buyMovie.length; i++){
+                    movieList += ` <div id="fullMovie">
+                        <div class="movieTrailer"><img src="${buyMovie[i].movieBanner}"/></div>
+                        <div class="aboutMovie"><h2>${buyMovie[i].movieTitle}</h2></div>
+                        </div>`;
+                }
+                hstarMovieList.innerHTML = movieList;
+
+            }
+        </script>
     </body>
 
 </html>
