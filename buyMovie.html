@@ -107,12 +107,12 @@
                 <div class="buyMovie">
                     <div class="movieCost">
                         <h3>Watch on Disney+ HotStar</h3>
-                        <div id="movieDetail" class="movieDetail">
+                        <div class="movieDetail">
                             <div class="moviePoster">
                                 <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kaduva-tamil-et00332530-1677151823.jpg"
                                     alt="">
                             </div>
-                            <div class="movieTitle">
+                            <div id="movieDetail" class="movieTitle">
                                 <h4>Kaduva (Tamil)</h4>
                                 <p>Action • 2022 • 2 hr 35 min</p>
                                 <p>Tamil Audio</p>
@@ -122,7 +122,7 @@
                         </div>
                         <div class="totalCost">
                             <h4>Buy Movie</h4>
-                            <div class="priceBreakage">
+                            <div id="totalCost" class="priceBreakage">
                                 <div>
                                     <p>Price</p>
                                     <p>₹227.12</p>
@@ -225,6 +225,8 @@
                 var hStarUserList = JSON.parse(localStorage.getItem("hotStarUsers"));
                 var hotStarCurrentUser = JSON.parse(localStorage.getItem("hStarActiveUser"));
                 var hstarMovieList = document.getElementById("movieList");
+                var hstarMovieName = document.getElementById("movieDetail");
+                var hstarMovieCost = document.getElementById("totalCost");
                 var buyMovie ;
 
                 for (var i = 0; i < hStarUserList.length; i++) {
@@ -233,13 +235,29 @@
                     }
                 }
                 var movieList = "";
+                var movieName = "";
+                var movieCost = "";
                 for(var i=0; i<buyMovie.length; i++){
                     movieList += ` <div id="fullMovie">
                         <div class="movieTrailer"><img src="${buyMovie[i].movieBanner}"/></div>
                         <div class="aboutMovie"><h2>${buyMovie[i].movieTitle}</h2></div>
                         </div>`;
+                        movieName += `<div class="movieDetail">
+                            <div>
+                                <h4>${buyMovie[i].movieTitle}</h4>
+                                </div>
+                            </div>`;
+                            movieCost += `<div class="priceBreakage">
+                                <div>
+                                    <p>${buyMovie[i].movieTitle}</p>
+                                    <p>₹${buyMovie[i].movieCost}</p>
+                                    </div>
+                                </div>`;
+                            
                 }
                 hstarMovieList.innerHTML = movieList;
+                hstarMovieName.innerHTML = movieName;
+                hstarMovieCost.innerHTML = movieCost;
 
             }
         </script>
